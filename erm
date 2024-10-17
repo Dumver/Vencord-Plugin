@@ -1,0 +1,6 @@
+const { app } = require('electron');
+
+app.on('ready', () => {
+  const mainWindow = app.windows[0]; // Get the main Discord window
+  mainWindow.setTitle('NotDiscord'); // Set the new title
+});
